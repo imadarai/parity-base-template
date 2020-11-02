@@ -6,7 +6,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -15,17 +15,28 @@
   },
   "dependencies": {
     "gatsby": "^2.24.85",
+    "gatsby-plugin-react-helmet": "^3.3.14",
+    "gatsby-plugin-sass": "^2.3.22",
+    "gatsby-plugin-sharp": "^2.6.43",
+    "gatsby-remark-images": "^3.3.40",
+    "gatsby-remark-normalize-paths": "^1.1.0",
+    "gatsby-remark-relative-images": "^0.2.3",
+    "gatsby-source-filesystem": "^2.3.37",
+    "gatsby-transformer-remark": "^2.8.47",
+    "gatsby-transformer-sharp": "^2.5.20",
+    "node-sass": "^4.14.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "prettier": "2.1.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
+  "repository": "https://github.com/gatsbyjs/gatsby-starter-hello-world",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "main": "index.js",
+  "author": "Imad Arain <arain.imad@gmail.com>"
 }
